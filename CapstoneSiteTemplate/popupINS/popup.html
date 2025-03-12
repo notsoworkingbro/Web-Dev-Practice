@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="popup.css"
+      rel="stylesheet"
+    />
+    <title>asasasa</title>
+  </head>
+  <body> 
+    <div class="container">
+        <h1>pop up login</h1>
+        <a href="#" class="button" id="button">Login</a>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <a href="#" class="button" id="escape">escape</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex"
+        })
+
+        document.getElementById("escape").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none"
+        })
+    </script>
+
+
+  </body>
+</html>

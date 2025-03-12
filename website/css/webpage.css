@@ -1,0 +1,175 @@
+/* Overall */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Content Body */
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0  0.5rem 1rem rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    padding-left: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    padding: 5px;
+    width: 80px;
+}
+
+.header-logo h1 {
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+/* Header Navigation */
+nav {
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0rem calc((90vw - 1500px) / 2);
+}
+
+/* Header Navigation links */
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+}
+
+/* Navigation Bubbles */
+.home-bubble,
+.about-bubble,
+.contact-bubble,
+.be-aartision-bubble,
+.login-bubble,
+.signup-bubble {
+    ---padding: 3px;
+
+    text-align: center;
+    padding: var(---padding);
+
+    /* Navigation Box edge radius */
+    border-radius: 6px;
+
+    /* Search BarNavigation Box transition*/
+    transition: box-shadow 0.6s;
+}
+
+/* Main Body Left Column Description */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 8.75% 8rem;
+}
+
+.left-column h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.left-column p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Image on top of Search Bar*/
+.left-column img {
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+/* Search Bar Bubble*/
+.search-bar {
+    --padding: 5px;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+
+    /* Search Bar Box edge radius*/
+    border-radius: 28px;
+    background: #f6f6f6;
+    width: 400px;
+
+    /* Search Bar transition*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-bar:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* When mouse hovers on "bubbles" */
+.home-bubble:hover,
+.about-bubble:hover,
+.contact-bubble:hover,
+.be-aartision-bubble:hover,
+.login-bubble:hover,
+.signup-bubble:hover {
+    /* box outline as shadow */
+    box-shadow: 0 0 8px rgba(255, 1, 1, 0.75);
+}
+
+/* Search Bar*/
+.search-input {
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+/* Search Bar Content*/
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.search-input::placeholder {
+    font-size: 0.9rem;
+}
+
+/* Footer below */
+.soc-med-box, .soc-med-box nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #f6f6f6;
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href=""
+      rel="stylesheet"
+    />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="" defer></script>
+
+    <title>Therapist Portal</title>
+  </head>
+  <body>
+    <!--NAVBAR PART-->
+    <nav id="sidebar">
+        <ul>
+            <li class="active">
+              <span class="logo">CAPSTONE</span>
+              <button onclick=toggleSidebar() id="toggle-btn">
+                <i class='bx bxs-yin-yang' ></i>
+              </button>
+            </li>
+
+            <li class="active">
+              <a href="#" onclick="toggleContainer('home-container')" class="selection">
+                <i class='bx bx-home' ></i>
+                <span>Home</span>
+              </a>
+            </li>
+            
+            <li class="active">
+              <a href="#" onclick="toggleContainer('dashboard-container')" class="selection">
+                <i class='bx bxs-dashboard' ></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <button onclick=toggleSubMenu(this) class="dropdown-btn"> 
+                <i class='bx bx-shape-square' ></i>
+                <span>My Patients</span>
+                <i class='bx bxs-down-arrow' ></i>
+              </button>
+              <ul class="sub-menu">
+                <div>
+                  <li><a href="#" onclick="toggleContainer('patient-container')" class="selection"><span>Patient Name</span></a></li>
+                </div>
+              </ul> 
+            </li>
+
+            <li class="active">
+              <a href="#" onclick="toggleContainer('therapist-profile-container')" class="selection" id="">
+                <i class='bx bxs-user-rectangle' ></i>
+                <span>Profile</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="#" class="selection">
+                <i class='bx bx-shield-alt-2' ></i>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="#" class="selection">
+                <i class='bx bxs-contact'></i>
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <button class="log-out-btn" id="toggle-log-out-btn">
+                <i class='bx bx-log-out' ></i>
+                <span>Log Out</span>
+              </button>
+            </li>
+        </ul>
+    </nav>
+    <!--END OF NAVBAR PART-->
+
+    <!--START OF ALL MAIN CONTENT-->
+    <main>
+      <div class="hud-bar">
+        Therapist Name
+      </div>
+
+      <!-- HOME / DASHBOARD / PROFILE -->
+      <div class="content-div" id="home-container">
+          
+        <div class="container">
+          <div class="content">1</div>
+          <h2>CAPSTONOE PROJECT (LAGAY DEVICE)</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+        <div class="container">
+          <div class="content">1</div>
+          <h2>aaa</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+        <div class="container">
+          <div class="content">1</div>
+          <h2>aaa</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+      </div>
+
+      <div class="content-div" id="dashboard-container">
+          
+        <div class="container">
+          <div class="content">1</div>
+          <h2>DASHBOARD</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+        <div class="container">
+          <div class="content">1</div>
+          <h2>aaa</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+      </div>
+
+      <div class="content-div" id="therapist-profile-container">
+          
+        <div class="container">
+          <div class="content">1</div>
+          <h2>STATS CHECK</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+        <div class="container">
+          <div class="content">1</div>
+          <h2>RUNES AND MASTERY</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Beatae recusandae eos numquam consequuntur, porro provident autem quisquam maiores. 
+            Alias cupiditate quidem eveniet nostrum a debitis repellendus, corporis ad atque eum!</p>
+        </div>
+
+      </div>
+      <!-- END OF HOME / DASHBOARD / PROFILE -->
+    </main>
+  </body>
+</html>

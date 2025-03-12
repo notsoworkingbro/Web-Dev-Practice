@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="style1.css"
+      rel="stylesheet"
+    />
+    <title>SignUp</title>
+  </head>
+  <body>
+
+    <div class="sign-up-form-container glass">
+      <div class="sign-up-form">
+        <div class="registration-title">Sign Up</div>
+
+        <form action="" method="POST">
+            <div class="user-details">
+
+              <div class="input-box">
+                <span class="details">Username</span>
+                <Input type="text" id="username" name="username" placeholder="Create a username" required></Input>
+              </div>
+
+              <div class="input-box">
+                <span class="details">First name</span>
+                <Input type="text" id="fname" name="fname" placeholder="Enter First Name" required></Input>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Last name</span>
+                <Input type="text" id="lname" name="lname" placeholder="Enter Last Name" required></Input>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Email</span>
+                <Input type="email" id="email" name="email" placeholder="Enter Email" required></Input>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Password</span>
+                <Input type="password" id="pass1" name="pass1" placeholder="Create a password" required></Input>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Confirm password</span>
+                <Input type="password" id="pass2" name="pass2" placeholder="Confirm password" required></Input>
+              </div>
+
+              <input type="hidden" name="form_id" value="signup-form">
+
+            </div>
+
+            <!-- <div class="gender-details">
+
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+              </div>
+
+            </div> -->
+
+            <button class="button" type="submit">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  
+
+  </body>
+</html>

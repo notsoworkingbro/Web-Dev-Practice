@@ -1,0 +1,296 @@
+:root {
+    --base-clr: #E8F9FF;
+    --line-clr-: #fbfbfb;
+    --hover-clr: #C4D9FF;
+    --text-clr: #11121a;
+    --accent-clr: #11121a;
+    --secondary-text-clr: #11121a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    line-height: 1.5rem;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.hud-bar {
+    border-bottom: 0.5px solid var(--line-clr-);
+    padding: 70px;
+}
+
+main p {
+    color: var(--secondary-text-clr);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/*Content containers*/
+#home-container{
+    padding: min(30px, 7%);
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#dashboard-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#profile-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#pushup-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#salsal-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#tulog-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#pushup1-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#salsal1-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#tulog1-container{
+    padding: min(30px, 7%);
+
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* Content */
+.container {
+    border: 0.5px solid var(--line-clr-);
+    border-radius: 1em;
+    margin-bottom: 20px;
+    padding: min(3em, 15%);
+    height: 30em;
+    width: 25em;
+}
+
+h2, p {
+    margin-top: 1em;
+}
+
+span {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* End of Content / Containers */
+
+#sidebar {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 280px;
+    padding: 5px 2em;
+    background-color: var(--base-clr);
+    border-right: 0.5px solid var(--line-clr-);
+
+    /*Use sticky for position so sidebar doesnt move along nor shrink inside elements*/
+    position: sticky;
+    top: 0;
+    align-self: start;
+
+    /*Transitioning when clcking siedbar*/
+    transition: 300ms ease-in-out;
+
+    /*Place overflow hiddden to hide content when squishing sidebar*/
+    overflow: hidden;
+
+    /*Place no wrap for hiding text also*/
+    text-wrap: nowrap;
+}
+
+/*sidebar closing (no space in #sidebar.close indicating it does not call class)*/
+#sidebar.close {
+    padding: 5px;
+    width: 55px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar > ul > li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+
+    .logo {
+        font-weight: 600;
+    }
+
+    /*LOGO HERE SYNTAX
+    ( .logo { font-weight: 600
+                }  )*/
+
+}
+
+#sidebar ul li.active a, #sidebar ul li.active span {
+    color: var(--accent-clr);
+
+    /*SVS HERE SYNTAX
+    ( svg {
+     fill: var(--accent-clr); )*/
+}
+
+#sidebar a, #sidebar .dropdown-btn, #sidebar .logo, #sidebar .log-out-btn {
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    color: var(--text-clr);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.dropdown-btn, .log-out-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+
+/* #sidebar svg */
+
+#sidebar i {
+    color: var(--text-clr); 
+    flex-shrink: 0;
+}
+
+/* For IcON STICKING TO RIGHT */
+#sidebar a span, #sidebar .dropdown-btn span, #sidebar .log-out-btn span {
+    flex-grow: 1;
+}
+
+/* When hovering through attributes "a" or "buttons" change background color for effect */
+#sidebar a:hover, #sidebar .dropdown-btn:hover, #sidebar .log-out-btn:hover {
+    background-color: var(--hover-clr);
+}
+
+#sidebar .sub-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 300ms ease-in-out;
+
+    > div {
+        overflow: hidden;
+    }
+}
+
+#sidebar .sub-menu.show-submenu {
+    grid-template-rows: 1fr;
+}
+
+.dropdown-btn i {
+    transition: 200ms ease;
+}
+
+.rotate i:last-child {
+    rotate: 180deg;
+}
+
+#sidebar .sub-menu a {
+    padding-left: 2em;
+}
+
+#toggle-btn {
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+
+    i {
+        transition: rotate 150ms ease;
+    }
+}
+
+#toggle-btn:hover {
+    background-color: var(--hover-clr);
+}
